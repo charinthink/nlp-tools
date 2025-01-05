@@ -54,8 +54,6 @@ target/
 *.exe
 *.out
 *.test
-*.mod
-*.sum
 
 # Frontend frameworks
 *.cache
