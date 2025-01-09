@@ -1,0 +1,127 @@
+# ไฟล์และโฟลเดอร์ที่เกี่ยวข้องกับระบบปฏิบัติการ
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+__MACOSX/
+
+# ไฟล์และโฟลเดอร์ของโปรแกรมแก้ไขโค้ด
+*.swp
+*.swo
+.idea/
+.vscode/
+*.bak
+
+# ไฟล์คอมไพล์และบิลด์
+*.out
+*.o
+*.so
+*.class
+*.pyc
+*.pyo
+*.exe
+*.dll
+*.obj
+*.a
+*.lib
+*.jar
+*.war
+
+# Node.js และ JavaScript/TypeScript
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+coverage/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+*.sqlite3
+instance/
+
+# Java
+*.war
+*.ear
+target/
+*.iml
+
+# Golang
+*.exe
+*.out
+*.test
+
+# Frontend frameworks
+*.cache
+*.map
+.next/
+.nuxt/
+*.lock
+public/
+temp/
+
+# Docker
+*.tar
+docker-compose.override.yml
+.envrc
+
+# IDE และ Text Editor
+*.log
+*.tmp
+*.vscode/
+*.vs/
+*.bak
+
+# Ansible
+*.retry
+
+# Database
+*.db
+*.sqlite3
+dump.rdb
+
+# Logs
+logs/
+*.log
+*.pid
+*.seed
+*.bak
+*.old
+
+# Test files
+*.test.js
+*.spec.js
+*.test.ts
+*.spec.ts
+
+# AWS / Cloud
+.aws
+.gcloud/
+.terraform/
+.cloud
+
+# Certificate
+*.pem
+*.crt
+*.key
+
+# Minio
+.minio/
+.minio.sys/
+
+# FastText และ NLP
+*.bin
+*.vec
+model/
+
+# Miscellaneous
+temp/
+*.tmp
+out/
+uploads/
+
+.data/model/
