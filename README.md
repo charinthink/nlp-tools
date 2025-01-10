@@ -21,7 +21,7 @@ The default value for 'ParallelConfig' is optimized for CPU: 8 cores and RAM: 16
 
 `Cpu: 4, ErrorBufferSize: 1000, EmbedBufferSize: 100000, ScanBufferSize: 256 * 1024, WorkerPoolSize: 12`
 
-You can use functions in an interface to set default values or manually set them.
+You can use functions in an interface to set get config.
 ```
 type Config interface {
 	IsEnabled() bool
