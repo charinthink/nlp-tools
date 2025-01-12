@@ -11,6 +11,8 @@ https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.th.300.vec.gz
 
 ### Models ###
 * [cc.th.300.vec](https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.th.300.vec.gz) (Word embeddings)
+### Options for training the model ###
+* Text classification
 ### Algorithm ###
 * Maximum Matching (Word segmentation)
 * Cosine similarity formula (Searching for word similarity)
@@ -54,7 +56,7 @@ func Set(core, errorBufferSize, embedBufferSize, scanBufferSize, workerPoolSize 
 	}
 }
 ```
-### Example ###
+### Example 1 ###
 ```go
 func main() {
 	/* Thai segmentation */
@@ -76,4 +78,29 @@ func main() {
 	resultBadWords := thaiDetectBadWord.DectectBadWord("สวัสดีหน้า...ส้นตีน", 0.5)
 	fmt.Println(resultBadWords) // output: [ส้นตีน]
 }
+```
+### Example 2 train model text classification ###
+```python
+from train import Train
+from load_data import LoadData
+
+
+def main():
+    df = LoadData.csv("../data/csv/review_shopping.csv", ["text", "label"])
+    Train.text_classification(df, "../data/test.pkl").text_classfication_test()
+
+
+if __name__ == "__main__":
+    main()
+
+// output
+Classification Report:
+               precision    recall  f1-score   support
+
+         neg       0.76      1.00      0.87        13
+         pos       1.00      0.69      0.82        13
+
+    accuracy                           0.85        26
+   macro avg       0.88      0.85      0.84        26
+weighted avg       0.88      0.85      0.84        26
 ```

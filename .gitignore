@@ -117,6 +117,11 @@ logs/
 *.bin
 *.vec
 model/
+bin/
+lib/
+__pycache__
+test_run.py
+pyvenv.cfg
 
 # Miscellaneous
 temp/
