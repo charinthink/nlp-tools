@@ -23,6 +23,7 @@ class TextClassification:
         )
 
 
+
 class Train:
     def __init__(self, df, X_test, y_test, pipeline):
         self.df = df
@@ -42,10 +43,10 @@ class Train:
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=test_size, random_state=random_state
         )
-
         pipeline = Pipeline(
             [("vectorizer", TfidfVectorizer()), ("classifier", LogisticRegression())]
         )
         pipeline.fit(X_train, y_train)
         joblib.dump(pipeline, output)
         return TextClassification(df, X_test, y_test, pipeline)
+

@@ -1,4 +1,4 @@
-# thai-sentence
+# nlp-tool
 
 ### **** Before running the ThaiSimilarity function you need to download model from the following link and place it in the `data/model` directory. ***
 https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.th.300.vec.gz
@@ -104,3 +104,4 @@ Classification Report:
    macro avg       0.88      0.85      0.84        26
 weighted avg       0.88      0.85      0.84        26
 ```
+
